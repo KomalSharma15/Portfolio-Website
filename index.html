@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Komal Sharma </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <section id="home" class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo1.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#education">EDUCATION</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>            
+            </nav>
+
+            <div class="text-box">
+                <h2>Hello There!</h2> <br>
+                <h1>I'M KOMAL SHARMA</h1> <br>
+                <h3>Full Stack Developer</h3> <br>
+                <a href="#about" class="hero-btn">Let's Exlpore!</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <h1>ABOUT</h1>
+            <h2>Don't dream it, BE IT.</h2>
+            <img class="image" src="images/me1.jpg" alt="myimage">
+            <p>Life is all about creativity. Isn't it?
+               <br>I am a Full Stack Developer based in New Delhi, India.
+               <br>I love to create new designs and transform it digitally working both on front and back-end.
+            </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="education">
+            <h1>EDUCATION</h1>
+            <div class="row">
+                <div class="education-col">
+                    <h3>HIGH SCHOOL</h3>
+                    <h5>Kendriya Vidyalaya Sector-8 R.K.Puram New Delhi</h5><br>
+                    <p><b>Stream</b> : Science (PCM with CS)
+                        <br> <b>Class XII</b> : 92%    
+                        <br> <b>Class X</b> : 10 CGPA 
+                    </p>
+                </div>
+                <div class="education-col">
+                    <h3>GRADUATION</h3>
+                    <h5>Atma Ram Sanatan Dharma College, University of Delhi</h5><br>
+                    <p> <b>Course</b> : B.Sc.(Honours) Mathematics
+                        <br> <b>CGPA</b> : 8.716 
+                    </p>
+                </div>
+                <div class="education-col">
+                    <h3>POST GRADUATION</h3>
+                    <h5>Jamia Millia Islamia University</h5><br>
+                    <p> <b>Course</b> : M.Sc. Mathematics with Computer Science
+                        <br> <b>CGPA</b> : 9.72 (1st Semester) 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- SKILLS -->
+        <section id="skills" class="skills">
+            <h1>SKILLS</h1>
+            <div class="row">
+                <div class="skills-col">
+                    <h3> BACK END </h3>
+                    <p>
+                        JAVA<br>
+                        Data Structures and Algorithm<br>
+                        Object Oriented Programming<br>
+                        SQL
+                    </p>
+                </div>
+                <div class="skills-col">
+                    <h3> FRONT END </h3>
+                    <p>
+                        HTML<br>
+                        CSS<br>
+                        JavaScript
+                    </p>
+                </div>
+                <div class="skills-col">
+                    <h3> FAMILIAR WITH </h3>
+                    <p>
+                        C<br>
+                        Python
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MORE ABOUT MYSELF -->
+        <section class="passion">
+            <h1>One Life, Many Passions.</h1>
+            <p>To succeed, You have to believe in something
+                with such a passion that it becomes a reality.
+            </p>
+            <div class="row">
+                <div class="passion-col">
+                    <img src="images/model.png">
+                    <div class="layer">
+                        <h3>MODEL</h3>
+                    </div>
+                    <h3>MODEL</h3>
+                    <p>A freelance Delhi based Model,<br> I love to express myself through art.</p>
+                </div>
+                <div class="passion-col">
+                    <img src="images/ncc.png">
+                    <div class="layer">
+                        <h3>NATIONAL CADET CORPS</h3>
+                    </div>
+                    <h3>NATIONAL CADET CORPS</h3>
+                    <p>Ex-Cadet Warrant Officer of 2 Delhi Girls Air Squadron
+                        <br> Part of All India Vayu Sainik Camp 2019 <br> and Republic Day Camp 2020.
+                    </p>
+                </div>
+                <div class="passion-col">
+                    <img src="images/gd.png">
+                    <div class="layer">
+                        <h3>GRAPHIC DESIGNER</h3>
+                    </div>
+                    <h3>GRAPHIC DESIGNER</h3>
+                    <p>Love to create new digital designs,<br> I was Graphic Designing Team Head of <br>
+                        Quaternion - Mathematics Society of ARSD College.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <h1>CONNECT</h1>
+            <p>I would love to connect with you, STAY IN TOUCH.</p>
+            <div class="contact-box">
+
+                <div class="contact-left">
+                    <h3>Send Your Message</h3>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" id="name" placeholder="Your Name" onkeyup="validateName()">
+                                <span id="name-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" id="phone" placeholder="+91-9879879876" onkeyup="validatePhone()">
+                                <span id="phone-error"></span>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="abc@gmail.com" onkeyup="validateEmail()">
+                                <span id="email-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" id="subject" placeholder="Subject" onkeyup="validateSubject()">
+                                <span id="subject-error"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Your Message</label>
+                            <textarea rows="5" id="message" placeholder="Write your Message" onkeyup="validateMessage()"></textarea>
+                            <span id="message-error"></span>
+                        </div>
+
+                        <button type="submit" onclick="return validateForm()">SUBMIT</button>
+                        <span id="submit-error"></span>
+                    </form>
+                </div>
+
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>06komals@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td>+91 98180*****</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>New Delhi, India</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <section class="footer">
+            <div class="footer-content">
+                <h3>Connect</h3>
+                <ul class="socials">
+                    <li><a href="https://www.linkedin.com/in/komalsharma15/"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/ms.komals/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/ms_komals"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/ms.komals/"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed by Komal Sharma <br> copyright &copy;2022</p>
+            </div>
+        </section>
+
+        <!-- JAVASCRIPT FILE ADDED -->
+        <script src="script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>
