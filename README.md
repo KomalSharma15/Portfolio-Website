@@ -1,2 +1,3 @@
 # Portfolio-Website
-This repository contains files of my portfolio website.
+This repository will take you to my portfolio website.
+https://komalsharma15.github.io/Portfolio-Website/
